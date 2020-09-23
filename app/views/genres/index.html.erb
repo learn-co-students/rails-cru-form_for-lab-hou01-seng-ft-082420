@@ -1,0 +1,5 @@
+<h1>Genres</h1>
+<%@genres.each do |genre|%>
+<li> <%= link_to genre.name, genre_path(genre) %> </li>
+<%end%>
+<a href="<%=new_genre_path%>"> <button type='button'>New Genre</button> </a>
